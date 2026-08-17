@@ -1,0 +1,1209 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0%;
+    margin:0%;
+    box-sizing: border-box;
+    color: #fff;
+    position:sticky;
+}
+.nav{
+
+    background-color: #398E8A;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding-right: 2%;
+    color: #fff;
+
+ 
+    
+}
+.nav h1{
+    width: 100%;
+    margin-left: 2%;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+ .m-nav {
+    display: flex;
+    justify-content:right;
+    align-items:center;
+    width:100%;
+    height: 10%;
+}
+.m-nav h4{
+    margin-left: 2%;
+    /* text-decoration: none; */
+}
+.m-nav h4 a{
+    text-decoration: none;
+}
+.m-nav button{
+    background-color: #398E8A;
+    border: 2px solid #fff;
+    height: 70px;
+    width: 20%;
+    border-radius: 13px;
+    font-size: 25px;
+    margin-left: 2%;
+    color: #fff;
+
+}
+.box{
+    height: 699px;
+    width: 100%;
+    background-color: #074643;
+    border-bottom-right-radius:80% ;
+    display: flex;
+    justify-content: space-around;
+}
+.box .i-box{
+    margin-top: 100px;
+    margin-left: 30px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.s-box>img{
+    margin-top: 50px;
+      background-color: #fff;
+      border-radius: 48%;
+      width: 400px;
+      height: 500px;
+      border: #398E8A 10px solid;
+}
+.button{
+    background-color: #398E8A;
+    font-size: 22px;
+    height: 65px;
+    width:200px;
+    border-radius: 10rem;
+    text-transform: uppercase;
+    padding: 17px;
+    color: #fff;
+    position: relative;
+    z-index: 1; 
+    }
+    .button::before{
+        content: "";
+        background-color:#074643;
+        filter:grayscale(35%);
+        top:0%;
+        left: 0%;
+        right:0%;
+        bottom: 0%;
+        border-radius: 24px;
+        position: absolute;
+        padding: 17px;
+        z-index: -1;
+        transform: scaleX(0);
+        transition-property: all;
+        transition-duration: 0.4S;
+        transition-delay: 0.2s;
+        transform-origin: left;
+    }
+    .button:hover:before{
+        transform: scaleX(1);
+    }
+     .box2{
+        padding-left: 20px;
+        padding-top: 60px;
+        height:700px;
+        width:100%;
+        background-color: #398E8A;
+        display:grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-gap:25px;
+        
+    }
+    
+    .inbox2{
+        border-radius: 24px;
+        height: 260px;
+        width:260px;
+        background-color: #12625E;
+        text-align: center;
+        font-size: larger;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-delay: 0.1s;
+    }
+    .inbox2:hover{
+        transform:scale(1.05);
+    }
+    .inbox2 img{
+        height: 200px;
+        width:200px;
+        margin:10px;
+    }
+    .about-me{
+        background-color: #074643;
+        width:100%;
+        display: flex;
+        height: 600px;
+        margin-top: 10px;
+        padding-top: 40px;
+        padding-left: 40px;
+        gap:18%;
+        scroll-behavior: smooth;
+    }
+    .about-me img{
+        border-radius: 48%;
+        height: 500px;
+        width: 400px;
+        border: #398E8A 8px solid;
+    }
+    .inabout{
+        font-size: 30px;
+        margin-top: 30px;
+        width: 800px;
+    }
+    #arrow {
+    color: black;
+    font-size: 50px;
+    position: fixed;
+    left: 1%;
+    bottom: 1%;
+    background-color:gray;
+    width: 50px;
+    height: 60px;
+    text-align: center;
+    }
+    .contact{
+        background-color: #398E8A;
+        height: 940px;
+        margin-top: 10px;
+        padding-top: 1%;
+        width:100%;
+        
+    }
+    .contact input{
+        height: 40px;
+        color: black;
+        font-size: larger;
+        width: 600px;
+        
+    }
+    .contact form{
+        position: absolute;
+        font-size: x-large;
+        left: 34%;
+    }
+    .contact button{
+        background-color: #10726d;
+        font-size: 22px;
+        height: 65px;
+        width:200px;
+        border-radius: 14px;
+        /* border:none; */
+        padding: 17px;
+        color: #fff;
+        position: relative;
+        z-index: 1; 
+        margin-left: 30%;
+        margin-top: 20px;
+        }
+        .contact button::before{
+            content: "";
+            background-color:rgb(3, 64, 46);
+            filter:grayscale(35%);
+            top:0%;
+            left: 0%;
+            right:0%;
+            bottom: 0%;
+            border-radius: 14px;
+            position: absolute;
+            padding: 17px;
+            z-index: -1;
+            transform: scale(0);
+            transition-property: all;
+            transition-duration: 0.4S;
+            transition-delay: 0.2s;
+            transform-origin: left;
+        }
+        .contact button:hover:before{
+            transform: scale(1);
+        }
+    .bottom{
+        background-color: rgb(174, 175, 175);
+        height: 300px;
+        width:100%;
+        margin-bottom: 2%;
+        
+    }
+    .bottom-in{
+        font-size: x-large;
+        padding-top: 3%;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    .i{
+        font-size:xx-large;
+        text-align: center;
+        margin-top: 3%;
+    }
+.i>a{
+    margin-left: 2%;
+}
+.i i:hover{
+   color:black ;
+   transition-duration: 1s;
+}
+.bottom-in h3:hover{
+    color:black ;
+    transition-duration: 1s;
+}
+.bottom-in a:hover{
+    color:black ;
+    transition-duration: 1ms;
+    
+}
+@media (min-width:300px) and (max-width:399px){
+    .nav{
+        height:100%;
+        font-size: 12px;
+    }
+
+    
+    .m-nav h4{
+        visibility: hidden;
+        display:none;
+    }
+    .m-nav button{
+        width:150px;
+        height:48px;
+        font-size: large;
+        margin-right: 10px;
+    }
+    .box{
+        display:flex;
+        flex-direction: column;
+        height: auto;
+        align-items: normal;
+        border-radius: 0%;
+        
+    }
+    .s-box img{
+        height: 290px;
+        width: 250px;
+        margin-bottom: 30px;
+        margin-left: 60px;
+    }
+    .box2{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(7,1fr);
+        grid-gap:15px;
+        height: auto;
+    }
+    .inbox2{
+        height:160px;
+        width:140px;
+    }
+    .inbox2 img{
+       height: 100px;
+       width:100px;
+    }
+    .about-me{
+        display:block;
+        height:100%;
+    }
+    .about-me img{
+        height:250px;
+        width: 270px;
+    }
+    .inabout{
+        font-size: 15px;
+        height: 100%;
+        width:290px;
+        padding-bottom: 20px;
+    }
+    .contact form{
+    position: absolute;
+    font-size: x-large;
+    left: 6%;
+    }
+    .contact input{
+        width: 300px;
+    }
+     .contact textarea{
+        width: 70%;
+    }
+    .contact button{
+       left: 20%;
+       margin-left: 0%;
+    }
+
+    .bottom-in h3{
+        opacity: 0%;
+        display: none;
+    }
+    .bottom-in p{
+        display: flex;
+        justify-content:space-around;
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+
+    .i i{
+        margin-left: 3%;
+    }
+
+}
+@media (min-width:400px) and (max-width:500px){
+    .nav{
+        height:100%;
+        font-size: 12px;
+    }
+
+    
+    .m-nav h4{
+        visibility: hidden;
+        display:none;
+    }
+    .m-nav button{
+        width:150px;
+        height:48px;
+        font-size: large;
+        margin-right: 10px;
+    }
+    .box{
+        display:flex;
+        flex-direction: column;
+        height: auto;
+        border-radius: 0%;
+        padding-right: 3%;
+        
+    }
+    .s-box img{
+        height: 290px;
+        width: 250px;
+        margin-bottom: 30px;
+        margin-left: 80px;
+    }
+    .box2{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(7,1fr);
+        grid-gap:5px;
+        height: auto;
+    }
+    .inbox2{
+        height:200px;
+        width:180px;
+    }
+    .inbox2 img{
+       height: 150px;
+       width:150px;
+    }
+    .about-me{
+        display:block;
+        height:100%;
+        /* padding-left: 20%; */
+    }
+    .about-me img{
+        height:250px;
+        width: 270px;
+        margin-left: 10%;
+    }
+    .inabout{
+        font-size: 15px;
+        height: 100%;
+        width:290px;
+        padding-left: 5%;
+        padding-bottom: 20px;
+    }
+    .contact form{
+    position: absolute;
+    font-size: x-large;
+    left: 10%;
+    }
+    .contact input{
+        width:336px;
+    }
+     .contact textarea{
+        width: 70%;
+    }
+    .contact button{
+       left: 20%;
+       margin-left: 0%;
+    }
+    .bottom-in h3{
+        opacity: 0%;
+        display: none;
+    }
+    .bottom-in p{
+        display: flex;
+        justify-content:space-around;
+        padding-top: 15%;
+        padding-bottom: 5%;
+    }
+
+    .i i{
+        margin-left: 3%;
+    }
+
+}
+@media (min-width:501px) and (max-width:600px){
+    .nav{
+        height:100%;
+        font-size: 12px;
+    }
+
+    
+    .m-nav h4{
+        visibility: hidden;
+        display:none;
+    }
+    .m-nav button{
+        width:150px;
+        height:48px;
+        font-size: large;
+        margin-right: 10px;
+    }
+    .box{
+        display:flex;
+        flex-direction: column;
+        height: auto;
+        border-radius: 0%;
+        padding-right: 3%;
+        
+    }
+    .s-box img{
+        height: 370px;
+        width: 300px;
+        margin-bottom: 30px;
+        margin-left: 25%;
+    }
+    .box2{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(7,1fr);
+        grid-gap:20px;
+        height: auto;
+    }
+    .inbox2{
+        height:240px;
+        width:220px;
+    }
+    .inbox2 img{
+       height: 190px;
+       width:190px;
+    }
+    .about-me{
+        display:block;
+        height:100%;
+        /* padding-left: 20%; */
+    }
+    .about-me img{
+        height:270px;
+        width: 290px;
+        margin-left: 20%;
+    }
+    .inabout{
+        font-size: 15px;
+        height: 100%;
+        width:450px;
+        padding-left: 5%;
+        padding-bottom: 20px;
+    }
+    .contact form{
+    position: absolute;
+    font-size: x-large;
+    left: 12%;
+    }
+    .contact input{
+        width:400px;
+    }
+     .contact textarea{
+        width: 70%;
+    }
+    .contact button{
+       left: 24%;
+       margin-left: 0%;
+    }
+    .bottom-in h3{
+        opacity: 0%;
+        display: none;
+    }
+    .bottom-in p{
+        display: flex;
+        justify-content:space-around;
+        padding-top: 15%;
+        padding-bottom: 5%;
+    }
+
+    .i i{
+        margin-left: 3%;
+    }
+
+}
+@media (min-width:601px) and (max-width:700px){
+    .nav{
+        height:100%;
+        font-size: 12px;
+    }
+
+    
+    .m-nav h4{
+        visibility: hidden;
+        display:none;
+    }
+    .m-nav button{
+        width:150px;
+        height:48px;
+        font-size: large;
+        margin-right: 10px;
+    }
+    .box{
+        display:flex;
+        flex-direction: row;
+        height: 700px;
+        border-bottom-right-radius:80% ;
+        padding-right: 3%;
+        
+    }
+    .s-box img{
+        height: 370px;
+        width: 300px;
+        margin-bottom: 30px;
+        /* margin-left: 25%; */
+    }
+    .box2{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(7,1fr);
+        grid-gap:20px;
+        height: 700px;
+    }
+    .inbox2{
+            height:180px;
+            width:160px;
+    }
+    .inbox2 img{
+        height: 120px;
+        width:120px;
+    }
+    .about-me{
+        display:flex;
+        height:100%;
+        /* padding-left: 20%; */
+    }
+    .about-me img{
+        border-radius: 48%;
+        height: 350px;
+        width: 300px;
+        border: #398E8A 8px solid;
+        margin-bottom:30px;
+    }
+    .inabout{
+        font-size: 15px;
+        height: 100%;
+        width:450px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+    .contact form{
+    position: absolute;
+    font-size: x-large;
+    left: 23%;
+    }
+    .contact input{
+        width:400px;
+    }
+     .contact textarea{
+        width: 70%;
+    }
+    .contact button{
+       left: 24%;
+       margin-left: 0%;
+    }
+    .bottom-in h3{
+        padding-top: 4%;
+        padding-bottom: 5%;
+    }
+    .bottom-in p{
+        display: flex;
+        justify-content:space-around;
+        padding-top: 4%;
+        padding-bottom: 5%;
+    }
+
+    .i i{
+        margin-left: 3%;
+
+    }
+
+}
+@media (min-width:701px) and (max-width:800px){
+    .nav{
+        height:100%;
+        font-size: 12px;
+    }
+
+    
+    .m-nav h4{
+        visibility: hidden;
+        display:none;
+    }
+    .m-nav button{
+        width:150px;
+        height:48px;
+        font-size: large;
+        margin-right: 10px;
+    }
+    .box{
+        display:flex;
+        flex-direction: row;
+        height: 700px;
+        border-bottom-right-radius:80% ;
+        padding-right: 3%;
+        
+    }
+    .s-box img{
+        height: 370px;
+        width: 300px;
+        margin-bottom: 30px;
+        /* margin-left: 25%; */
+    }
+    .box2{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(7,1fr);
+        grid-gap:20px;
+        height: 900px;
+    }
+    .inbox2{
+            height:240px;
+            width:200px;
+    }
+    .inbox2 img{
+        height: 180px;
+        width:180px;
+    }
+    .about-me{
+        display:flex;
+        height:100%;
+        /* padding-left: 20%; */
+    }
+    .about-me img{
+        border-radius: 48%;
+        height: 350px;
+        width: 300px;
+        border: #398E8A 8px solid;
+        margin-bottom:30px;
+    }
+    .inabout{
+        font-size: 15px;
+        height: 100%;
+        width:450px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+    .contact form{
+    position: absolute;
+    font-size: x-large;
+    left: 19%;
+    }
+    .contact input{
+        width:500px;
+    }
+     .contact textarea{
+        width: 70%;
+    }
+    .contact button{
+       left: 28%;
+       margin-left: 0%;
+    }
+    .bottom-in h3{
+        padding-top: 4%;
+        padding-bottom: 5%;
+    }
+    .bottom-in p{
+        display: flex;
+        justify-content:space-around;
+        padding-top: 4%;
+        padding-bottom: 5%;
+    }
+    .i i{
+        margin-left: 3%;
+    }
+}
+@media (min-width:801px) and (max-width:900px){
+    .nav{
+        height:100%;
+        font-size: 12px;
+    }
+
+    
+    .m-nav h4{
+        font-size: large;
+    }
+    .m-nav button{
+        width:150px;
+        height:48px;
+        font-size: large;
+        margin-right: 10px;
+    }
+    .box{
+        display:flex;
+        flex-direction: row;
+        height: 700px;
+        border-bottom-right-radius:80% ;
+        padding-right: 3%;
+        
+    }
+    .s-box img{
+        height: 370px;
+        width: 300px;
+        margin-bottom: 30px;
+        /* margin-left: 25%; */
+    }
+    .box2{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(7,1fr);
+        grid-gap:20px;
+        height: 900px;
+    }
+    .inbox2{
+            height:240px;
+            width:220px;
+    }
+    .inbox2 img{
+        height: 180px;
+        width:180px;
+    }
+    .about-me{
+        display:flex;
+        height:100%;
+        /* padding-left: 20%; */
+    }
+    .about-me img{
+        border-radius: 48%;
+        height: 350px;
+        width: 300px;
+        border: #398E8A 8px solid;
+        margin-bottom:30px;
+    }
+    .inabout{
+        font-size: 15px;
+        height: 100%;
+        width:450px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+    .contact form{
+    position: absolute;
+    font-size: x-large;
+    left: 19%;
+    }
+    .contact input{
+        width:550px;
+    }
+     .contact textarea{
+        width: 70%;
+    }
+    .contact button{
+       left: 28%;
+       margin-left: 0%;
+    }
+    .bottom-in h3{
+        padding-top: 4%;
+        padding-bottom: 5%;
+    }
+    .bottom-in p{
+        display: flex;
+        justify-content:space-around;
+        padding-top: 4%;
+        padding-bottom: 5%;
+    }
+    .i i{
+        margin-left: 3%;
+    }
+}
+@media (min-width:901px) and (max-width:1000px){
+    .nav{
+        height:100%;
+        font-size: 12px;
+    }
+
+    
+    .m-nav h4{
+        font-size: large;
+    }
+    .m-nav button{
+        width:150px;
+        height:48px;
+        font-size: large;
+        margin-right: 10px;
+    }
+    .box{
+        display:flex;
+        flex-direction: row;
+        height: 700px;
+        border-bottom-right-radius:80% ;
+        padding-right: 3%;
+        
+    }
+    .s-box img{
+        height: 370px;
+        width: 300px;
+        margin-bottom: 30px;
+        /* margin-left: 25%; */
+    }
+    .box2{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(7,1fr);
+        grid-gap:20px;
+        height: 900px;
+    }
+    .inbox2{
+            height:240px;
+            width:220px;
+    }
+    .inbox2 img{
+        height: 180px;
+        width:180px;
+    }
+    .about-me{
+        display:flex;
+        height:100%;
+        /* padding-left: 20%; */
+    }
+    .about-me img{
+        border-radius: 48%;
+        height: 350px;
+        width: 300px;
+        border: #398E8A 8px solid;
+        margin-bottom:30px;
+    }
+    .inabout{
+        font-size: 15px;
+        height: 100%;
+        width:450px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+    .contact form{
+    position: absolute;
+    font-size: x-large;
+    left: 25%;
+    }
+    .contact input{
+        width:500px;
+    }
+     .contact textarea{
+        width: 70%;
+    }
+    .contact button{
+       left: 26%;
+       margin-left: 0%;
+    }
+    .bottom-in h3{
+        padding-top: 4%;
+        padding-bottom: 5%;
+    }
+    .bottom-in p{
+        display: flex;
+        justify-content:space-around;
+        padding-top: 4%;
+        padding-bottom: 5%;
+    }
+    .i i{
+        margin-left: 3%;
+    }
+}
+@media (min-width:1001px) and (max-width:1100px){
+    .nav{
+        height:100%;
+        font-size: 12px;
+    }
+
+    
+    .m-nav h4{
+        font-size: large;
+    }
+    .m-nav button{
+        width:150px;
+        height:48px;
+        font-size: large;
+        margin-right: 10px;
+    }
+    .box{
+        display:flex;
+        flex-direction: row;
+        height: 700px;
+        border-bottom-right-radius:80% ;
+        padding-right: 3%;
+        
+    }
+    .s-box img{
+        margin-top: 50px;
+        background-color: #fff;
+        border-radius: 48%;
+        width: 400px;
+        height: 500px;
+        border: #398E8A 10px solid;
+    }
+    .box2{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(7,1fr);
+        grid-gap:15px;
+        height: 900px;
+    }
+    .inbox2{
+            height:240px;
+            width:220px;
+    }
+    .inbox2 img{
+        height: 180px;
+        width:180px;
+    }
+    .about-me{
+        display:flex;
+        height:100%;
+        /* padding-left: 20%; */
+    }
+    .about-me img{
+        border-radius: 48%;
+        height: 350px;
+        width: 300px;
+        border: #398E8A 8px solid;
+        margin-bottom:30px;
+    }
+    .inabout{
+        font-size: 15px;
+        height: 100%;
+        width:450px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+    .contact form{
+    position: absolute;
+    font-size: x-large;
+    left: 26%;
+    }
+    .contact input{
+        width:500px;
+    }
+     .contact textarea{
+        width: 70%;
+    }
+    .contact button{
+       left: 26%;
+       margin-left: 0%;
+    }
+    .bottom-in h3{
+        padding-top: 4%;
+        padding-bottom: 5%;
+    }
+    .bottom-in p{
+        display: flex;
+        justify-content:space-around;
+        padding-top: 4%;
+        padding-bottom: 5%;
+    }
+    .i i{
+        margin-left: 3%;
+        height: auto;
+    }
+}
+@media (min-width:1101px) and (max-width:1300px){
+    .nav{
+        height:100%;
+        font-size: 12px;
+    }
+
+    
+    .m-nav h4{
+        font-size: large;
+    }
+    .m-nav button{
+        width:150px;
+        height:48px;
+        font-size: large;
+        margin-right: 10px;
+    }
+    .box{
+        display:flex;
+        flex-direction: row;
+        height: 700px;
+        border-bottom-right-radius:80% ;
+        padding-right: 3%;
+        
+    }
+    .s-box img{
+        margin-top: 50px;
+      background-color: #fff;
+      border-radius: 48%;
+      width: 400px;
+      height: 500px;
+      border: #398E8A 10px solid;
+    }
+    .box2{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(7,1fr);
+        grid-gap:15px;
+        height: 900px;
+    }
+    .inbox2{
+            height:240px;
+            width:220px;
+    }
+    .inbox2 img{
+        height: 180px;
+        width:180px;
+    }
+    .about-me{
+        display:flex;
+        height:100%;
+        /* padding-left: 20%; */
+    }
+    .about-me img{
+        border-radius: 48%;
+        height: 350px;
+        width: 300px;
+        border: #398E8A 8px solid;
+        margin-bottom:30px;
+    }
+    .inabout{
+        font-size: 15px;
+        height: 100%;
+        width:650px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+    .contact form{
+    position: absolute;
+    font-size: x-large;
+    left: 30%;
+    }
+    .contact input{
+        width:500px;
+    }
+     .contact textarea{
+        width: 70%;
+    }
+    .contact button{
+       left: 26%;
+       margin-left: 0%;
+    }
+    .bottom-in h3{
+        padding-top: 4%;
+        padding-bottom: 5%;
+    }
+    .bottom-in p{
+        display: flex;
+        justify-content:space-around;
+        padding-top: 4%;
+        padding-bottom: 5%;
+    }
+    .i i{
+        margin-left: 3%;
+    }
+}
+@media (min-width:1301px) and (max-width:1550px){
+    .nav{
+        height:100%;
+        font-size: 12px;
+    }
+
+    
+    .m-nav h4{
+        font-size: large;
+    }
+    .m-nav button{
+        width:150px;
+        height:48px;
+        font-size: large;
+        margin-right: 10px;
+    }
+    .box{
+        display:flex;
+        flex-direction: row;
+        height: 700px;
+        border-bottom-right-radius:80% ;
+        padding-right: 3%;
+        
+    }
+    .s-box img{
+        margin-top: 50px;
+      background-color: #fff;
+      border-radius: 48%;
+      width: 400px;
+      height: 500px;
+      border: #398E8A 10px solid;
+    }
+    .box2{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(7,1fr);
+        grid-gap:15px;
+        height: 900px;
+    }
+    .inbox2{
+        height: 260px;
+        width:260px;
+    }
+    .inbox2 img{
+        height: 200px;
+        width:200px;
+    }
+    .about-me{
+        display:flex;
+        height:100%;
+        /* padding-left: 20%; */
+    }
+    .about-me img{
+        border-radius: 48%;
+        height: 350px;
+        width: 300px;
+        border: #398E8A 8px solid;
+        margin-bottom:30px;
+    }
+    .inabout{
+        font-size: 15px;
+        height: 100%;
+        width:650px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+    .contact form{
+    position: absolute;
+    font-size: x-large;
+    left: 33%;
+    }
+    .contact input{
+        width:500px;
+    }
+     .contact textarea{
+        width: 70%;
+    }
+    .contact button{
+       left: 26%;
+       margin-left: 0%;
+    }
+    .bottom-in h3{
+        padding-top: 2%;
+        padding-bottom: 3%;
+    }
+    .bottom-in p{
+        display: flex;
+        justify-content:space-around;
+        padding-top: 2%;
+        padding-bottom: 3%;
+    }
+    .i i{
+        margin-left: 3%;
+    }
+}
+
